@@ -14,7 +14,7 @@
 			section .text
 ft_strlen:
 			cmp		rdi, 0
-			je		return
+			je		done
 			mov		rax, -1			; init rax to 0
 
 loop:	
@@ -22,6 +22,6 @@ loop:
 			cmp		byte [rdi + rax], 0	; check if the char is equal to '\0'
 			jne		loop			; if not loop again
 			ret						; return rax (length of string)
-return:
+done:
 			xor rax, rax
 			ret
