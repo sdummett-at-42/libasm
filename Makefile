@@ -2,25 +2,27 @@
 #       COMANDS                                                                #
 # **************************************************************************** #
 NASM		=	nasm
+AR			=	ar
+ARFLAGS		=	rcs
 RM			=	rm
 
 # **************************************************************************** #
 #       TITLE                                                                  #
 # **************************************************************************** #
-NAME		=	libasm
-FT_STRLEN	= ft_strlen
+NAME		=	libasm.a
 
 # **************************************************************************** #
 #       FLAGS                                                                  #
 # **************************************************************************** #
-CFLAGS		=	-felf64
+NASMFLAGS	=	-felf64
 INCS		=	-Iincs
 RMFLAGS		=	-rf
 
 # **************************************************************************** #
 #       SOURCES                                                                #
 # **************************************************************************** #
-SRCS		=	srcs/hello.s
+SRCS		=	srcs/ft_strlen.s
+# srcs/ft_strcpy.s
 
 # **************************************************************************** #
 #       RULES                                                                  #
@@ -28,27 +30,26 @@ SRCS		=	srcs/hello.s
 OBJS		=	$(SRCS:.s=.o)
 
 %.o			:	%.s
-				$(NASM) $(CFLAGS) $(INCS) $< -o $@
+				$(NASM) $(NASMFLAGS) $< -o $@
 
 $(NAME)		:	$(OBJS)
-				ld -o $@ $(OBJS)
+				$(AR) $(ARFLAGS) $(NAME) $(OBJS)
 
-$(FT_STRLEN):
-				nasm -felf64 srcs/ft_strlen.s && \
-				gcc -Wall -Wextra -Werror -g3 srcs/ft_strlen.o srcs/callft_strlen.c\
-				-o ft_strlen
+all			:	$(NAME) test
 
-all			:	$(NAME)
+test		:	$(NAME)
+				gcc -Iincs main.c libasm.a
+				./a.out
 
 clean		:
 				$(RM) $(RMFLAGS) $(OBJS)
 
 fclean		:	clean
-				$(RM) $(RMFLAGS) $(NAME)
+				$(RM) $(RMFLAGS) $(NAME) a.out
 
 re			:	fclean all
 
 # **************************************************************************** #
 #       PHONY                                                                  #
 # **************************************************************************** #
-.PHONY		:	all clean fclean re
+.PHONY		:	all clean fclean re test
