@@ -1,5 +1,5 @@
 # **************************************************************************** #
-#       COMANDS                                                                #
+#       COMMANDS                                                               #
 # **************************************************************************** #
 NASM		=	nasm
 AR			=	ar
@@ -17,6 +17,7 @@ NAME		=	libasm.a
 NASMFLAGS	=	-felf64
 INCS		=	-Iincs
 RMFLAGS		=	-rf
+# CFLAGS		=	-Wall -Wextra -Werror -I$(CURDIR)
 
 # **************************************************************************** #
 #       SOURCES                                                                #
@@ -36,11 +37,12 @@ OBJS		=	$(SRCS:.s=.o)
 $(NAME)		:	$(OBJS)
 				$(AR) $(ARFLAGS) $(NAME) $(OBJS)
 
-all			:	$(NAME) test
+all			:	$(NAME)
 
-test		:	$(NAME)
-				gcc -Iincs main.c libasm.a
-				./a.out
+tests		:	$(NAME)
+				@clang -I. -o test tests/*.c -L. -lasm
+				@./test
+				@rm test
 
 clean		:
 				$(RM) $(RMFLAGS) $(OBJS)
@@ -53,4 +55,4 @@ re			:	fclean all
 # **************************************************************************** #
 #       PHONY                                                                  #
 # **************************************************************************** #
-.PHONY		:	all clean fclean re test
+.PHONY		:	all clean fclean re tests
