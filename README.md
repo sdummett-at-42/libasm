@@ -3,7 +3,7 @@
 ## TODO
 
 - [x] Add make tests
-- [ ] Write unit test for ft_read
+- [x] Write unit test for ft_read
 - [ ] Write unit test for ft_strcmp
 - [x] Write unit test for ft_strcpy
 - [x] Write unit test for ft_strdup

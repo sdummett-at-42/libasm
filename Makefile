@@ -25,7 +25,8 @@ RMFLAGS		=	-rf
 SRCS		=	srcs/ft_strlen.s \
 				srcs/ft_strcpy.s \
 				srcs/ft_write.s \
-				srcs/ft_strdup.s
+				srcs/ft_strdup.s \
+				srcs/ft_read.s \
 # srcs/ft_strcpy.s
 
 # **************************************************************************** #

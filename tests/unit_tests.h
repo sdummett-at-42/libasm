@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <fcntl.h>
+#include <unistd.h>
 
 #ifndef UNIT_TESTS_H
 # define UNIT_TESTS_H
