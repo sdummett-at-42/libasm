@@ -2,6 +2,7 @@
 #define LIBASM_H
 
 #include <sys/types.h>
+#include <errno.h>
 
 int		ft_strlen(char *);
 char	*ft_strcpy(char *dest, const char *src);

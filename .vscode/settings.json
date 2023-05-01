@@ -1,5 +1,6 @@
 {
 	"files.associations": {
-		"libasm.h": "c"
+		"libasm.h": "c",
+		"errno.h": "c"
 	}
 }

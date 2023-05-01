@@ -1,9 +1,12 @@
 #include "libasm.h"
 #include <stdio.h>
 #include <string.h>
+#include <fcntl.h>
 
 #ifndef UNIT_TESTS_H
 # define UNIT_TESTS_H
+
+# define BUFFER_SIZE 1024
 
 int	ft_strlen_test();
 int	ft_strcpy_test();
