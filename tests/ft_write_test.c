@@ -15,7 +15,7 @@ int ft_write_test()
 
 		fd_sys = open("tests/test_sys.txt", O_RDONLY);
 		char buf_sys[BUFFER_SIZE] = {0};
-		int bytes_sys = read(fd_sys, buf_sys, len);
+		read(fd_sys, buf_sys, len);
 		unlink("tests/test_sys.txt");
 		close(fd_sys);
 
@@ -29,7 +29,7 @@ int ft_write_test()
 
 		fd_ft = open("tests/test_ft.txt", O_RDONLY);
 		char buf_ft[BUFFER_SIZE] = {0};
-		int bytes_ft = read(fd_ft, buf_ft, len);
+		read(fd_ft, buf_ft, len);
 		unlink("tests/test_ft.txt");
 		close(fd_ft);
 
@@ -57,7 +57,7 @@ int ft_write_test()
 
 		fd_sys = open("tests/test_sys.txt", O_RDONLY);
 		char buf_sys[BUFFER_SIZE] = {0};
-		int bytes_sys = read(fd_sys, buf_sys, len);
+		read(fd_sys, buf_sys, len);
 		unlink("tests/test_sys.txt");
 		close(fd_sys);
 
@@ -71,7 +71,7 @@ int ft_write_test()
 
 		fd_ft = open("tests/test_ft.txt", O_RDONLY);
 		char buf_ft[BUFFER_SIZE] = {0};
-		int bytes_ft = read(fd_ft, buf_ft, len);
+		read(fd_ft, buf_ft, len);
 		unlink("tests/test_ft.txt");
 		close(fd_ft);
 
@@ -90,7 +90,7 @@ int ft_write_test()
 
 		fd_sys = open("tests/test_sys.txt", O_RDONLY);
 		char buf_sys[BUFFER_SIZE] = {0};
-		int bytes_sys = read(fd_sys, buf_sys, len);
+		read(fd_sys, buf_sys, len);
 		unlink("tests/test_sys.txt");
 		close(fd_sys);
 
@@ -104,7 +104,7 @@ int ft_write_test()
 
 		fd_ft = open("tests/test_ft.txt", O_RDONLY);
 		char buf_ft[BUFFER_SIZE] = {0};
-		int bytes_ft = read(fd_ft, buf_ft, len);
+		read(fd_ft, buf_ft, len);
 		unlink("tests/test_ft.txt");
 		close(fd_ft);
 
@@ -123,7 +123,7 @@ int ft_write_test()
 
 		fd_sys = open("tests/test_sys.txt", O_RDONLY);
 		char buf_sys[BUFFER_SIZE] = {0};
-		int bytes_sys = read(fd_sys, buf_sys, len);
+		read(fd_sys, buf_sys, len);
 		unlink("tests/test_sys.txt");
 		close(fd_sys);
 
@@ -137,7 +137,7 @@ int ft_write_test()
 
 		fd_ft = open("tests/test_ft.txt", O_RDONLY);
 		char buf_ft[BUFFER_SIZE] = {0};
-		int bytes_ft = read(fd_ft, buf_ft, len);
+		read(fd_ft, buf_ft, len);
 		unlink("tests/test_ft.txt");
 		close(fd_ft);
 
@@ -156,7 +156,7 @@ int ft_write_test()
 
 		fd_sys = open("tests/test_sys.txt", O_RDONLY);
 		char buf_sys[BUFFER_SIZE] = {0};
-		int bytes_sys = read(fd_sys, buf_sys, len);
+		read(fd_sys, buf_sys, len);
 		unlink("tests/test_sys.txt");
 		close(fd_sys);
 
@@ -170,7 +170,7 @@ int ft_write_test()
 
 		fd_ft = open("tests/test_ft.txt", O_RDONLY);
 		char buf_ft[BUFFER_SIZE] = {0};
-		int bytes_ft = read(fd_ft, buf_ft, len);
+		read(fd_ft, buf_ft, len);
 		unlink("tests/test_ft.txt");
 		close(fd_ft);
 
@@ -189,7 +189,7 @@ int ft_write_test()
 
 		fd_sys = open("tests/test_sys.txt", O_RDONLY);
 		char buf_sys[BUFFER_SIZE] = {0};
-		int bytes_sys = read(fd_sys, buf_sys, len);
+		read(fd_sys, buf_sys, len);
 		unlink("tests/test_sys.txt");
 		close(fd_sys);
 
@@ -203,7 +203,7 @@ int ft_write_test()
 
 		fd_ft = open("tests/test_ft.txt", O_RDONLY);
 		char buf_ft[BUFFER_SIZE] = {0};
-		int bytes_ft = read(fd_ft, buf_ft, len);
+		read(fd_ft, buf_ft, len);
 		unlink("tests/test_ft.txt");
 		close(fd_ft);
 
@@ -222,7 +222,7 @@ int ft_write_test()
 
 		fd_sys = open("tests/test_sys.txt", O_RDONLY);
 		char buf_sys[BUFFER_SIZE] = {0};
-		int bytes_sys = read(fd_sys, buf_sys, len);
+		read(fd_sys, buf_sys, len);
 		unlink("tests/test_sys.txt");
 		close(fd_sys);
 
@@ -236,7 +236,7 @@ int ft_write_test()
 
 		fd_ft = open("tests/test_ft.txt", O_RDONLY);
 		char buf_ft[BUFFER_SIZE] = {0};
-		int bytes_ft = read(fd_ft, buf_ft, len);
+		read(fd_ft, buf_ft, len);
 		unlink("tests/test_ft.txt");
 		close(fd_ft);
 
@@ -255,7 +255,7 @@ int ft_write_test()
 
 		fd_sys = open("tests/test_sys.txt", O_RDONLY);
 		char buf_sys[BUFFER_SIZE] = {0};
-		int bytes_sys = read(fd_sys, buf_sys, len);
+		read(fd_sys, buf_sys, len);
 		unlink("tests/test_sys.txt");
 		close(fd_sys);
 
@@ -269,7 +269,7 @@ int ft_write_test()
 
 		fd_ft = open("tests/test_ft.txt", O_RDONLY);
 		char buf_ft[BUFFER_SIZE] = {0};
-		int bytes_ft = read(fd_ft, buf_ft, len);
+		read(fd_ft, buf_ft, len);
 		unlink("tests/test_ft.txt");
 		close(fd_ft);
 
@@ -287,7 +287,7 @@ int ft_write_test()
 
 		fd_sys = open("tests/test_sys.txt", O_RDONLY);
 		char buf_sys[BUFFER_SIZE] = {0};
-		int bytes_sys = read(fd_sys, buf_sys, len);
+		read(fd_sys, buf_sys, len);
 		unlink("tests/test_sys.txt");
 		close(fd_sys);
 
@@ -300,7 +300,7 @@ int ft_write_test()
 
 		fd_ft = open("tests/test_ft.txt", O_RDONLY);
 		char buf_ft[BUFFER_SIZE] = {0};
-		int bytes_ft = read(fd_ft, buf_ft, len);
+		read(fd_ft, buf_ft, len);
 		unlink("tests/test_ft.txt");
 		close(fd_ft);
 

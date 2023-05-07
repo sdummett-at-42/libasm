@@ -17,7 +17,7 @@ NAME		=	libasm.a
 NASMFLAGS	=	-felf64
 INCS		=	-Iincs
 RMFLAGS		=	-rf
-# CFLAGS		=	-Wall -Wextra -Werror -I$(CURDIR)
+CFLAGS		=	-Wall -Wextra -Werror
 
 # **************************************************************************** #
 #       SOURCES                                                                #
@@ -43,7 +43,7 @@ $(NAME)		:	$(OBJS)
 all			:	$(NAME)
 
 tests		:	$(NAME)
-				@clang -I. -o test tests/*.c -L. -lasm
+				@clang $(CFLAGS) -I. -o test tests/*.c -L. -lasm
 				@./test
 				@rm test
 
